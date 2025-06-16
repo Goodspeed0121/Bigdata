@@ -1,0 +1,87 @@
+<a class="navbar-brand" href="{% url 'index:index' %}"><img src="/static/title.png"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+
+<div class="col-lg-12 mb-2">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #000000;">
+        <a class="navbar-brand" href="{% url 'index:index' %}"><font color="#FFFFFF" face="DFKai-sb" size="5"><b>輿情大數據</b></font></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><font color="#FFFFFF" face="DFKai-sb" size="5"><b>
+                        期中報告
+                        </b></font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{% url 'app_top_keyword:home' %}">熱門關鍵詞</a>
+                        <div class="dropdown-divider"></div>                        
+                        <a class="dropdown-item" href="{% url 'app_top_person:home' %}">熱門地區</a>
+                        <div class="dropdown-divider"></div>                        
+                        <a class="dropdown-item" href="{% url 'app_top_person_v2:home' %}">風雲人物</a>
+                    </div>
+                </li>
+
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="{% url 'namespace_leaderboard:politician' %}" id="navbarDropdown" role="button"
+                       aria-haspopup="true" aria-expanded="false"><font color="#FFFFFF" face="DFKai-sb" size="5"><b>
+                        政治人物聲量分析
+                        </b></font>
+                    </a>
+                </li>
+
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><font color="#FFFFFF" face="DFKai-sb" size="5"><b>
+                        各類分析
+                        </b></font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="{% url 'app_top_ner:home'%}">NER熱門分析</a>
+                        <div class="dropdown-divider"></div>                        
+                        <a class="dropdown-item" href="{% url 'app_user_keyword:home'%}">你的關鍵詞熱門度分析</a>
+                        <div class="dropdown-divider"></div>                        
+                        <a class="dropdown-item" href="{% url 'namespace_user_keyword_assoc:home'%}">全文檢索與關聯新聞分析</a>
+                        <div class="dropdown-divider"></div>                        
+                        <a class="dropdown-item" href="{% url 'namespace_userkey_sentiment:home'%}">你的關鍵詞情緒分析</a>
+                        <div class="dropdown-divider"></div>          
+                        <a class="dropdown-item" href="{% url 'app_sentiment:home'%}">詞句情緒分析</a>                                                
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                       data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><font color="#FFFFFF" face="DFKai-sb" size="5"><b>
+                        其他功能
+                        </b></font>
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">                        
+                        <a class="dropdown-item" href="{% url 'namespace_news_rcmd:home' %}">今日新聞瀏覽與新聞推薦</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="{% url 'course_introduction' %}">課程介紹網頁</a>
+                    </div>
+                </li>
+            </ul>
+            
+            <ul class="navbar-nav mr-auto"> 
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.ltn.com.tw/"><font color="#FFFFFF" face="DFKai-sb" size="5"><b>自由時報</b></font></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{% url 'index:index' %}"><font color="#FFFFFF" face="DFKai-sb" size="5"><b>回首頁</b></font></a>
+                </li> 
+            </ul>
+
+
+        </div>
+    </nav>
+</div>
